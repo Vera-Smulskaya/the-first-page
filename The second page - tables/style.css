@@ -1,0 +1,192 @@
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  height: 100%;
+  background: #e5e5e5;
+}
+
+.aside {
+  width: 15%;
+  background: #111111;
+  border-radius: 0px 50px 0px 0px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.section-content-cards {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  margin-left: 40px;
+}
+
+.section-title {
+  margin: 20px 5px 5px 65px;
+}
+
+.new-card {
+  height: 130px;
+  width: 240px;
+  border: 2px dashed #6b6f7b;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+.icon-add-card {
+  padding: 30px 100px 2px 100px;
+}
+
+.add-new-card {
+  padding: 0 70px 20px 70px;
+  margin-top: 0;
+  color: #6b6f7b;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 75px 5px 60px;
+}
+
+.field-for-filtres {
+  background: #ffffff;
+  border: 1.5px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 130px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.icons {
+  padding: 10px 0 2px 10px;
+  border-left: 1.5px solid #d9d9d9;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.arrow {
+  padding: 10px;
+}
+
+.name-filtres {
+  margin-right: 5px;
+}
+
+.download {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #babec8;
+}
+
+.table {
+  margin: 0 60px 20px 60px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+th {
+  border-bottom: 2px solid #d9d9d9;
+  font-size: 16px;
+  color: #6b6f7b;
+  padding: 7px;
+}
+
+td {
+  padding: 0 28px;
+}
+
+.transactions .details {
+  color: #6b6f7b;
+  font-size: 14px;
+  padding-top: 0;
+}
+
+.total {
+  font-size: 20px;
+}
+
+.square {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #9b9999;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.status .circle {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 3px solid;
+  margin-right: 5px;
+}
+
+.status.done {
+  color: #17e383;
+}
+
+.status.done .circle {
+  border-color: #17e383;
+}
+
+.status.pending {
+  color: #ff9548;
+}
+
+.status.pending .circle {
+  border-color: #ff9548;
+}
+
+.dots {
+  padding-left: 50px;
+}
+
+.group-page-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.page-selection {
+  height: 34px;
+  width: 34px;
+  border-radius: 17px;
+  box-sizing: border-box;
+  border: 1px solid #9b9999;
+  margin: 6px 5px 15px 5px;
+  padding: 9px;
+}
+
+.aside-name {
+  color: #fcfcfc;
+  font-size: 24px;
+}
+
+.aside-logo {
+  padding: 50px 10px 0 20px;
+}
