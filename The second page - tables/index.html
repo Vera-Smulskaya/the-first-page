@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>The first page</title>
+    <title>The second page</title>
 
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -15,21 +15,44 @@
 
         <aside class="aside">
             <span>
-                <img src="assets/Group.png" class="aside-logo"/>
+                <img src="assets/Group.png" class="aside-logo" />
                 <span class="aside-name">E-cards</span>
             </span>
+            <p>
+                <img src="assets/transaction 1.png" class="aside-logo" />
+                <span class="aside-name-chapter">Transactions</span>
+            </p>
+            <p>
+                <img src="assets/Group 2837.png" class="aside-logo" />
+                <span class="aside-name-chapter">Cards</span>
+            </p>
+            <hr>
+            <p>
+                <img src="assets/1642926002105 (1) 1.png" class="aside-logo" />
+                <span class="aside-name-chapter">Itai Bracha</span>
+            </p>
+            <p>
+                <img src="assets/setting (1) 1.png" class="aside-logo" />
+                <span class="aside-name-chapter">Settings</span>
+            </p>
+            <p>
+                <img src="assets/logout (1) 1.png" class="aside-logo" />
+                <span class="aside-name-chapter">Logout</span>
+            </p>
 
         </aside>
 
         <main class="main-container">
             <section class="section cards">
-                <h2 class="section-title">Cards</h2>
+                <p class="section-title">Cards</p>
                 <div class="section-content-cards">
                     <div class="current-card">
-                       <img src="assets/Group 2847.png" width="300px" height="180px"/>
+                        <img src="assets/Group 2847.png" width="300px" height="180px" />
                     </div>
                     <div class="new-card">
-                        <img src="assets/add (7) 1.png" class="icon-add-card"/>
+                        <button1 class="icon-add-card">
+                            <img src="assets/add (7) 1.png" />
+                        </button1>
                         <p class="add-new-card">Add new Card</p>
                     </div>
                 </div>
@@ -37,36 +60,50 @@
 
             <section class="section transactions">
 
-                <h2 class="section-title">Transactions</h2>
+                <p class="section-title">Transactions</p>
                 <div class="section-content">
                     <div class="filters">
-                        <div class="field-for-filtres">
-                            <span><img src="assets/search.png"/></span>
-                            <span>Search for....</span>
-                        </div>
-                        <div class="field-for-filtres">
-                            <span class="name-filtres">Plug & Pay</span>
-                            <span class="icons"><img src="assets/Vector.png"/></span>
-                        </div>
-                        <div class="field-for-filtres">
-                            <span class="name-filtres">Employee</span>
-                            <span class="icons"><img src="assets/user, account, people, man.png"/></span>
-                        </div>
-                        <div class="field-for-filtres">
-                            <span class="name-filtres">Status</span>
-                            <span class="icons"><img src="assets/Vector (3).png"/></span>
-                        </div>
-                        <div class="field-for-filtres">
-                            <span class="name-filtres">Type</span>
-                            <span class="icons"><img src="assets/Vector 172.png"/></span>
-                        </div>
-                        <div class="field-for-filtres push">
-                            <span class="name-filtres">Sort by</span>
-                            <span class="icons"><img src="assets/Vector.png"/></span>
-                        </div>
-                        <div class="download">
-                            <span><img src="assets/download-arrow 1.png"  class="arrow"/></span>
-                        </div> 
+                        <ul>
+                            <li class="field-for-filtres search">
+                                <span><img src="assets/search.png" /></span>
+                                <input placeholder="Search for..." class="name-filtres" />
+                            </li>
+                            <li>
+                                <button class="field-for-filtres">
+                                    <span class="name-filtres">Plug & Pay</span>
+                                    <span class="icons"><img src="assets/Vector.png" /></span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="field-for-filtres">
+                                    <span class="name-filtres">Employee</span>
+                                    <span class="icons"><img src="assets/user, account, people, man.png" /></span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="field-for-filtres">
+                                    <span class="name-filtres">Status</span>
+                                    <span class="icons"><img src="assets/Vector (3).png" /></span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="field-for-filtres">
+                                    <span class="name-filtres">Type</span>
+                                    <span class="icons"><img src="assets/Vector 172.png" /></span>
+                                </button>
+                            </li>
+                            <li class="push">
+                                <button class="field-for-filtres">
+                                    <span class="name-filtres">Sort by</span>
+                                    <span class="icons"><img src="assets/Vector.png" /></span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="download">
+                                    <span><img src="assets/download-arrow 1.png" /></span>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
 
                     <table class="table">
@@ -84,7 +121,7 @@
                                 <div class="square"></div>
                             </td>
                             <td rowspan="2" class="logo">
-                                <img src="assets/figma.png"/>
+                                <img src="assets/figma.png" />
                             </td>
                             <td>Figma</td>
                             <td>Visa</td>
@@ -96,11 +133,13 @@
                             <td rowspan="2">Jan 12,2022</td>
                             <td rowspan="2" class="total">$783.22</td>
                             <td rowspan="2" class="dots">
-                                <img src="assets/Group 2872.png"/>
+                                <img src="assets/Group 2872.png" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="details">https://www.figma.com/</td>
+                            <td>
+                                <a href="//www.figma.com/" class="details">//www.figma.com/</a>
+                            </td>
                             <td class="details">***** 2468</td>
                             <td class="details">Itai Bracha31@gmail.com</td>
                             <td class="details">$783.22</td>
@@ -110,7 +149,7 @@
                                 <div class="square"></div>
                             </td>
                             <td rowspan="2" class="logo">
-                                <img src="assets/xd.png"/>
+                                <img src="assets/xd.png" />
                             </td>
                             <td>Adobe XD</td>
                             <td>Visa</td>
@@ -122,11 +161,13 @@
                             <td rowspan="2">Jan 12,2022</td>
                             <td rowspan="2" class="total">$783.22</td>
                             <td rowspan="2" class="dots">
-                                <img src="assets/Group 2872.png"/>
+                                <img src="assets/Group 2872.png" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="details">https://www.adobe.com/</td>
+                            <td>
+                                <a href="https://www.adobe.com/" class="details">https://www.adobe.com/</a>
+                            </td>
                             <td class="details">***** 2468</td>
                             <td class="details">Itai Bracha31@gmail.com</td>
                             <td class="details">$783.22</td>
@@ -136,7 +177,7 @@
                                 <div class="square"></div>
                             </td>
                             <td rowspan="2" class="logo">
-                                <img src="assets/download (14).png"/>
+                                <img src="assets/download (14).png" />
                             </td>
                             <td>Mailchimp</td>
                             <td>Visa</td>
@@ -148,11 +189,13 @@
                             <td rowspan="2">Jan 12,2022</td>
                             <td rowspan="2" class="total">$783.22</td>
                             <td rowspan="2" class="dots">
-                                <img src="assets/Group 2872.png"/>
+                                <img src="assets/Group 2872.png" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="details">https://mailchimp.com/</td>
+                            <td>
+                                <a href="https://mailchimp.com/" class="details">https://mailchimp.com/</a>
+                            </td>
                             <td class="details">***** 2468</td>
                             <td class="details">Itai Bracha31@gmail.com</td>
                             <td class="details">$783.22</td>
@@ -162,7 +205,7 @@
                                 <div class="square"></div>
                             </td>
                             <td rowspan="2" class="logo">
-                                <img src="assets/Group 2868.png"/>
+                                <img src="assets/Group 2868.png" />
                             </td>
                             <td>WIX</td>
                             <td>Visa</td>
@@ -174,11 +217,13 @@
                             <td rowspan="2">Jan 12,2022</td>
                             <td rowspan="2" class="total">$783.22</td>
                             <td rowspan="2" class="dots">
-                                <img src="assets/Group 2872.png"/>
+                                <img src="assets/Group 2872.png" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="details">https://wix.com/</td>
+                            <td>
+                                <a href="https://wix.com/" class="details">https://wix.com/</a>
+                            </td>
                             <td class="details">***** 2468</td>
                             <td class="details">Itai Bracha31@gmail.com</td>
                             <td class="details">$783.22</td>
@@ -188,7 +233,7 @@
                                 <div class="square"></div>
                             </td>
                             <td rowspan="2" class="logo">
-                                <img src="assets/youtube.png"/>
+                                <img src="assets/youtube.png" />
                             </td>
                             <td>Youtube</td>
                             <td>Visa</td>
@@ -200,33 +245,28 @@
                             <td rowspan="2">Jan 12,2022</td>
                             <td rowspan="2" class="total">$783.22</td>
                             <td rowspan="2" class="dots">
-                                <img src="assets/Group 2872.png"/>
+                                <img src="assets/Group 2872.png" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="details">https://www.youtube.com/</td>
+                            <td>
+                                <a href="https://www.youtube.com/" class="details">https://www.youtube.com/</a>
+                            </td>
                             <td class="details">***** 2468</td>
                             <td class="details">Itai Bracha31@gmail.com</td>
                             <td class="details">$783.22</td>
                         </tr>
-                        <tr>
-                            <td colspan="10">
-                                <div class="group-page-selection">
-                                    <div class="page-selection"><</div>
-                                    <div class="page-selection">1</div>
-                                    <div class="page-selection">2</div>
-                                    <div class="page-selection">3</div>
-                                    <div class="page-selection">4</div>
-                                    <div class="page-selection">></div>  
-                                </div>
-                            </td>
-                        </tr>
-
                     </table>
+                    <div class="group-page-selection">
+                        <button class="page-selection"><</button>
+                        <button class="page-selection">1</button>
+                        <button class="page-selection">2</button>
+                        <button class="page-selection">3</button>
+                        <button class="page-selection">4</button>
+                        <button class="page-selection">></button>
+                    </div>
                 </div>
             </section>
-
-
 
         </main>
 
