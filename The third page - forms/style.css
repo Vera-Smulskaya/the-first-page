@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Monteserrat";
+  src: url("Montserrat-Regular.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Monteserrat";
+  font-size: small;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Monteserrat";
+}
+
+nav {
+  display: flex;
+  border-bottom: 2px solid #9ba2bc;
+  height: 78px;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 112px;
+  height: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px 15px 22px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  color: #868688;
+}
+
+button:active {
+  background-position: 0% -66px;
+  color: #222;
+  padding: 5px 0 6px 8px;
+}
+
+.buttons-nav {
+  display: flex;
+  padding-right: 65px;
+  justify-content: space-around;
+}
+
+main {
+  width: 100%;
+  height: 1817px;
+}
+
+.form-area {
+  margin-left: 112px;
+}
+
+h1 {
+  margin: 3px 0 0 112px;
+  font-size: 36px;
+}
+
+.explonation {
+  margin: 0 0 0 112px;
+  color: #868688;
+}
+
+hr {
+  width: 100%;
+}
+
+.block-of-form {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+input,
+textarea {
+  border: 1px solid #b5b5b8;
+  border-radius: 6px;
+  width: 200px;
+}
+
+input[type="range"] {
+  margin-top: 20px;
+}
+
+footer {
+  height: 306px;
+  background-color: #151a30;
+}
+
+textarea {
+  width: 200px;
+  height: 100px;
+  resize: none;
+}
+
+.submit {
+  background: #6759ff;
+  border-radius: 8px;
+  width: 192px;
+  height: 31px;
+}
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-left: 20px;
+}
+
+.checkbox label {
+  margin-left: 3px;
+}
+
+.checkbox input {
+  width: auto;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}

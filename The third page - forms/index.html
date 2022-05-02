@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The third page - forms</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><a href="https://web"><img src="assets/Logo.png" alt="logo"></a></span>
+        <ul>
+            <li><button>Company</button></li>
+            <li><button>Services</button></li>
+            <li><button>FinTech Solutions</button></li>
+            <li><button>Products</button></li>
+            <li><button>Portfolio</button></li>
+            <li><button>Contuct us</button></li>
+        </ul>
+        <div class="buttons-nav">
+            <button><img src="assets/Search icon.png" alt="Search"></button>
+            <button><img src="assets/Notification icon.png" alt="Notification"></button>
+            <button><img src="assets/Avatar.png" alt="Avatar"></button>
+        </div>
+    </nav>
+    <main>
+        <h1>Contact us</h1>
+        <p class="explonation">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, officia velit<br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit </p>
+        <div class="form-area">
+            <form action="sent.html" method="post">
+                <div class="block-of-form">
+                    <section>
+                        <p><label for="company-name">Your company name*</label></p>
+                        <input type="text" required id="company-name" name="company-name">
+
+                        <p><label for="nature-of-business">Nature of Business*</label></p>
+                        <input type="text" required id="nature-of-business" name="nature-of-business">
+
+                        <p><label for="date">Data of registration</label></p>
+                        <input type="date" id="date" name="date" value>
+                    </section>
+
+                    <section>
+                        <p><label for="country">Country of registration*</label></p>
+                        <input type="text" required id="country" name="country" placeholder="Select" list="countries">
+                        <datalist id="countries">
+                            <option value="Option 01"></option>
+                            <option value="Option 02"></option>
+                            <option value="Option 03"></option>
+                            <option value="Option 04"></option>
+                            <option value="Option 05"></option>
+                            <option value="Option 06"></option>
+                            <option value="Option 07"></option>
+                        </datalist>
+
+                        <p><label for="address">Address</label></p>
+                        <input type="text" id="address" name="address">
+
+                        <p><label for="Postcode">Postcode</label></p>
+                        <input type="text" id="Postcod" name="Postcod">
+                    </section>
+                </div>
+                <hr>
+                <div class="block-of-form">
+                    <section>
+                        <p><label for="contact-name">Contact name</label></p>
+                        <input type="text" id="contact-name" name="contact-name"><br>
+
+                        <p><label for="contact-phone">Contact phone</label></p>
+                        <input type="text" id="contact-phone" name="contact-phone">
+
+                        <p><label for="email"
+                                pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/)">Email*</label>
+                        </p>
+                        <input type="email" required id="email" name="email">
+                    </section>
+
+                    <section>
+                        <p><label for="message">Let's talk about your idea</label></p>
+                        <textarea id="message" name="message"></textarea>
+
+
+                        <input type="range" name="myRange" id="myRange" step="10" min='0' max='100' value="50">
+                        <output name="result" for="myRange">0</output>
+                    </section>
+                </div>
+                <hr>
+                <div class="block-of-form">
+                    <section class="end-of-form">
+                        <input type="file" name="file" id="input-file" class="input-file"><br>
+                        <label for="input-file">File size of your document should not exceed 10MB</label>
+                    </section>
+                    <section>
+                        <span class="checkbox"><input type="checkbox" name="protecting"><label for="protecting">I want
+                                to protect my data by signing an NDA</label></span>
+                        <span class="checkbox"><input type="checkbox" checked name="accepting"><label for="accepting">I
+                                have read and accept the Terms and Conditions</label></span>
+                    </section>
+                </div>
+                <div class="submit-form">
+                    <button type="submit" value="Submit" class="submit">Submit</button>
+                    <span class="checkbox"><input type="radio" name="agreements" id="agreements">
+                        <label for="agreements"> duciLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Itaque</label></span>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
