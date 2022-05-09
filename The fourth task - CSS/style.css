@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "Roboto"; 
+    src: url("Roboto-Regular.ttf"); 
+    /* font-style: normal; 
+    font-weight: normal;  */
+    } 
+  
+  .page {
+     width: 900px;
+     height: 1000px;
+     box-shadow: 0 0 5px 0;
+     font-family: "Roboto";
+     margin: auto; 
+     padding: 40px;
+  }
+  
+  .page__header {
+    padding: 100px 0 20px 0;
+  }
+  
+.page__main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.page__header-description {
+  padding: 5px 70px 10px 70px;
+  color:  rgb(121, 121, 121)
+}
+
+.page__header-line {
+  border-bottom: 2px dotted #000;
+  text-align: center;
+  padding: 0 10px;
+}
+
+  h1 {
+      text-align: center;
+      font-size: 50px;
+      text-transform: uppercase;
+      font-weight: 900;
+      line-height: 0.8;
+  }  
+
+  .selection {
+    color: red;
+    padding: 5px 0 0 0;
+  }
+  
+  .author {
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    bottom: -10px;
+    padding: 0 3px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px 15px 10px;
+  }
+
+  .column:first-child {
+    padding-left: 0;
+  }
+
+  .column:last-child {
+    padding-right: 0;
+  }
+
+  .column_centralСolumn {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  
+  ul {
+    list-style-type: square; 
+    padding-left: 13px;
+  }
+  
+  li {
+    color: red;
+    margin-bottom: 15px;
+  } 
+  
+  li span {
+    color: black; 
+   }
+
+   .diagram {
+     display: flex;
+     height: 180px;
+     align-items: flex-end;
+     padding-top: 20px;
+   }
+
+   .diagram__rod { 
+     flex: 1;
+     box-shadow: 2px 2px 5px rgb(88, 88, 88);
+   }
+
+   .diagram__rod_white {
+     height: 18px;
+     background-color: beige;
+   }
+
+   .diagram__rod_red {
+    height: 36px;
+    background-color: rgb(247, 17, 17);
+   }
+
+   .diagram__rod_green-light {
+    height: 54px;
+    background-color: rgb(62, 186, 38);
+   }
+
+   .diagram__rod_violet {
+    height: 72px;
+    background-color: rgb(136, 7, 159);
+   }
+
+   .diagram__rod_yellow {
+    height: 90px;
+    background-color: rgb(230, 223, 6);
+   }
+
+   .diagram__rod_green {
+    height: 108px;
+    background-color: rgb(12, 242, 104);
+   }
+
+   .diagram__rod_black {
+    height: 126px;
+    background-color: rgb(4, 4, 4);
+   }
+
+   .diagram__rod_bordo {
+    height: 144px;
+    background-color: rgb(255, 2, 44);
+   }
+
+   .diagram__rod_blue {
+    height: 162px;
+    background-color: rgb(10, 17, 227);
+   }
+
+   .diagram__rod_orange {
+    height: 180px;
+    background-color: rgb(248, 143, 5);
+   }
+
+   .insert-diagram {
+     width: 95%;
+   }
+
+   .insert-diagram__inscription, .formula__inscription {
+    display: flex;
+    padding-top: 20px;
+    
+  }
+
+   .square {
+     width: 5px;
+     height: 5px;
+     background-color: rgb(255, 2, 44);
+     margin-top: 4px;
+   }
+
+   .inscription {
+     font-size:x-small;
+     padding-left: 5px;
+   }
+
+  .formula {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 10px;
+  }
