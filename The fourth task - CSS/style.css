@@ -7,7 +7,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap");
 
-.page__size {
+.page__container {
   width: 900px;
   height: 1000px;
   margin: auto;
@@ -63,30 +63,34 @@
 
 .column {
   flex: 1;
-  padding: 10px 15px 10px;
 }
 
 .column_left {
-  padding-left: 0;
+  padding: 10px 15px 10px 0;
 }
 
 .column_right {
-  padding-right: 0;
+  padding: 10px 0 10px 15px;
 }
 
 .column_central {
   border-left: 1px solid gray;
   border-right: 1px solid gray;
+  padding: 10px 15px;
 }
 
 .list {
   list-style-type: square;
+}
+
+.list_container {
   padding-left: 13px;
 }
 
 .list__label {
   color: red;
   margin-bottom: 15px;
+  margin-left: 0;
 }
 
 .list__text {
@@ -97,75 +101,74 @@
   display: flex;
   height: 180px;
   align-items: flex-end;
-  padding-top: 20px;
 }
 
-.diagram__rod {
+.diagram__item {
   flex: 1;
   box-shadow: 2px 2px 5px rgb(88, 88, 88);
 }
 
-.diagram__rod_white {
+.diagram__item_white {
   height: 18px;
   background-color: beige;
 }
 
-.diagram__rod_red {
+.diagram__item_red {
   height: 36px;
   background-color: rgb(247, 17, 17);
 }
 
-.diagram__rod_green-light {
+.diagram__item_green-light {
   height: 54px;
   background-color: rgb(62, 186, 38);
 }
 
-.diagram__rod_violet {
+.diagram__item_violet {
   height: 72px;
   background-color: rgb(136, 7, 159);
 }
 
-.diagram__rod_yellow {
+.diagram__item_yellow {
   height: 90px;
   background-color: rgb(230, 223, 6);
 }
 
-.diagram__rod_green {
+.diagram__item_green {
   height: 108px;
   background-color: rgb(12, 242, 104);
 }
 
-.diagram__rod_black {
+.diagram__item_black {
   height: 126px;
   background-color: rgb(4, 4, 4);
 }
 
-.diagram__rod_bordo {
+.diagram__item_bordo {
   height: 144px;
   background-color: rgb(255, 2, 44);
 }
 
-.diagram__rod_blue {
+.diagram__item_blue {
   height: 162px;
   background-color: rgb(10, 17, 227);
 }
 
-.diagram__rod_orange {
+.diagram__item_orange {
   height: 180px;
   background-color: rgb(248, 143, 5);
 }
 
-.insert-diagram {
+.diagram-container {
   width: 95%;
 }
 
-.insert-diagram__inscription,
+.diagram-container__inscription,
 .formula__inscription {
   display: flex;
   padding-top: 20px;
 }
 
-.insert-diagram__square,
+.diagram-container__square,
 .formula__square {
   width: 5px;
   height: 5px;
@@ -173,7 +176,7 @@
   margin-top: 4px;
 }
 
-.insert-diagram__caption,
+.diagram-container__caption,
 .formula__caption {
   font-size: x-small;
   padding-left: 5px;
