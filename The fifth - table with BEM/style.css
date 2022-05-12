@@ -5,7 +5,7 @@
 
 .page {
   display: flex;
-  background: #e5e5e5;
+  background-color: #e5e5e5;
   font-family: "Inter";
 }
 
@@ -38,9 +38,9 @@
 .current-card__container {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 220px;
   background-color: #17e383;
-  background: radial-gradient(40% 40%, #55b867, #438c52);
+  background: linear-gradient(to right top, rgb(123, 255, 150), rgb(0, 87, 45));
   border-radius: 12px;
   color: #fcfcfc;
   padding: 15px;
@@ -137,7 +137,7 @@
   padding-left: 10px;
 }
 
-.filtres__button_push {
+.filtres__button-push {
   margin-left: auto;
 }
 
@@ -154,7 +154,7 @@
   margin-left: 3px;
 }
 
-.filtres__button_download {
+.filtres__button-download {
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -172,72 +172,77 @@
 .table {
   background: #ffffff;
   border-radius: 30px 30px 0 0;
+  table-layout: fixed;
 }
 
 .table__head {
   border-bottom: 2px solid #d9d9d9;
   font-size: 16px;
   color: #6b6f7b;
-  padding: 30px 0 20px 0;
+  padding: 20px 0;
+  text-align: left;
 }
 
-.table__element_square {
+.table__head-name {
+  padding-left: 50px;
+}
+
+.table__element-square {
   height: 15px;
   width: 15px;
   border: 1px solid #9b9999;
-  margin: 0 auto;
+  margin: 5px;
 }
 
-.table__element_icon {
+.table__element-icon {
   height: 20px;
   width: 20px;
   margin: 0 auto;
 }
 
-.table__element_details {
+.table__element-details {
   color: #6b6f7b;
   font-size: 14px;
   padding-top: 0;
   text-decoration: none;
 }
 
-.table__element__user-mail {
+.table__element-user-mail {
   color: #6b6f7b;
   font-size: 12px;
   text-decoration: none;
 }
 
-.table__element_total-sum {
+.table__element-total-sum {
   font-size: 20px;
 }
 
-.table__element_status .table__element_circle {
-  display: inline-block;
+.table__element-status {
+  display: flex;
+  font-size: 13px;
+  padding-top: 20px;
+}
+
+.status__icon {
   height: 12px;
   width: 12px;
   border-radius: 6px;
   box-sizing: border-box;
   border: 3px solid;
-  margin-right: 5px;
+  margin: 3px 6px 0 0;
 }
 
-.table__element_status.status_done {
+.status_done {
   color: #17e383;
-}
-
-.table__element_status.status_done .table__element_circle {
   border-color: #17e383;
 }
 
-.table__element_status.status_pending {
+.status_pending {
   color: #ff9548;
-}
-
-.table__element_status.status_pending .table__element_circle {
   border-color: #ff9548;
 }
 
-.table__element_dots {
+.table__element-dots {
   padding-left: 50px;
 }
 
