@@ -146,7 +146,7 @@
   font-size: 14px;
 }
 
-.filters__input {
+.search__input {
   flex: 1;
   width: 100%;
   border: 0;
@@ -183,41 +183,41 @@
   text-align: left;
 }
 
-.table__head-name {
+.table__head_name {
   padding-left: 50px;
 }
 
-.table__element-square {
+.table__square {
   height: 15px;
   width: 15px;
   border: 1px solid #9b9999;
   margin: 5px;
 }
 
-.table__element-icon {
+.table__icon {
   height: 20px;
   width: 20px;
   margin: 0 auto;
 }
 
-.table__element-details {
+.table__details {
   color: #6b6f7b;
   font-size: 14px;
   padding-top: 0;
   text-decoration: none;
 }
 
-.table__element-user-mail {
+.table__user-mail {
   color: #6b6f7b;
   font-size: 12px;
   text-decoration: none;
 }
 
-.table__element-total-sum {
+.table__total-sum {
   font-size: 20px;
 }
 
-.table__element-status {
+.table__status {
   display: flex;
   font-size: 13px;
   padding-top: 20px;
@@ -242,7 +242,7 @@
   border-color: #ff9548;
 }
 
-.table__element-dots {
+.table__dots {
   padding-left: 50px;
 }
 
@@ -313,7 +313,7 @@
   text-decoration: none;
 }
 
-.aside__menu-text_transactions {
+.aside__menu-text_grey {
   color: #9598a0;
   margin-bottom: 20px;
 }
