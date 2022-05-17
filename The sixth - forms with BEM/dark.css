@@ -1,0 +1,14 @@
+:root {
+    --back-color: #111217; 
+    --text-color: white;
+    --submit-color: linear-gradient(136.51deg, #7B20B5 0%, #EA51BC 94.14%);;
+    --footer-color: #151A30;
+    --footer-text: #dbdee7;
+    --nav-color: #151A30;
+    --main-title: white;
+    --nav-button: #151A30;
+    --input-color: #111217;
+    --textarea-color: #111217;
+    --label-color: white;
+    --checkbox-text: white;
+}

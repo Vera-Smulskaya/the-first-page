@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The third page - forms</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="light.css" type="text/css">
+    <link rel="stylesheet" href="dark.css" type="text/css">
+     
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)">
+
+</head>
+
+<body class="page">
+   
+    <nav class="page__nav nav">
+        <div class="nav__container">
+            <span class="nav__logo"><a href="https://web"><img src="assets/Logo.png" alt="logo"></a></span>
+            <ul class="nav__menu menu">
+                <li class="menu__item"><button class="nav__button">Company</button></li>
+                <li class="menu__item"><button class="nav__button">Services</button></li>
+                <li class="menu__item"><button class="nav__button">FinTech Solutions</button></li>
+                <li class="menu__item"><button class="nav__button">Products</button></li>
+                <li class="menu__item"><button class="nav__button">Portfolio</button></li>
+                <li class="menu__item menu__item_current"><button class="nav__button">Contuct us</button></li>
+            </ul>
+            <div class="nav__icons">
+                <button class="nav__button"><img src="assets/Search icon.png" alt="Search"></button>
+                <button class="nav__button"><img src="assets/Notification icon.png" alt="Notification"></button>
+                <button class="nav__button"><img src="assets/Avatar.png" alt="Avatar"></button>
+                <button class="nav__button nav__button_light-dark">Theme</button>
+            </div>
+        </div>
+    </nav>
+    <main class="page__main main">
+        <h1 class="main__title">Contact us</h1>
+        <p class="main__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, officia velit<br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit </p>
+        <div class="main__form form">
+            <form action="sent.html" method="post">
+                <div class="form__block">
+                    <section class="form__section">
+                        <p><label class="form__label" for="company-name">Your company name*</label></p>
+                        <input class="form__input" type="text" required id="company-name" name="company-name">
+
+                        <p><label class="form__label" for="nature-of-business">Nature of Business*</label></p>
+                        <input class="form__input" type="text" required id="nature-of-business" name="nature-of-business">
+
+                        <p><label class="form__label" for="date">Data of registration</label></p>
+                        <input class="form__input" type="date" id="date" name="date" value>
+                    </section>
+
+                    <section class="form__section">
+                        <p><label class="form__label" for="country">Country of registration*</label></p>
+                        <input class="form__input" type="text" required id="country" name="country" placeholder="Select" list="countries">
+                        <datalist id="countries">
+                            <option value="Option 01"></option>
+                            <option value="Option 02"></option>
+                            <option value="Option 03"></option>
+                            <option value="Option 04"></option>
+                            <option value="Option 05"></option>
+                            <option value="Option 06"></option>
+                            <option value="Option 07"></option>
+                        </datalist>
+
+                        <p><label class="form__label" for="address">Address</label></p>
+                        <input class="form__input" type="text" id="address" name="address">
+
+                        <p><label class="form__label" for="Postcode">Postcode</label></p>
+                        <input class="form__input" type="text" id="Postcod" name="Postcod">
+                    </section>
+                </div>
+                <hr class="form__line">
+                <div class="form__block">
+                    <section class="form__section">
+                        <p><label class="form__label" for="contact-name">Contact name</label></p>
+                        <input class="form__input" type="text" id="contact-name" name="contact-name"><br>
+
+                        <p><label class="form__label" for="contact-phone">Contact phone</label></p>
+                        <input class="form__input" type="text" id="contact-phone" name="contact-phone">
+
+                        <p><label class="form__label" for="email"
+                                pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/)">Email*</label>
+                        </p>
+                        <input class="form__input" type="email" required id="email" name="email">
+                    </section>
+
+                    <section class="form__section">
+                        <p><label class="form__label" for="message">Let's talk about your idea</label></p>
+                        <textarea class="form__textarea" id="message" name="message"></textarea>
+
+
+                        <input class="form__input" type="range" name="myRange" id="myRange" step="10" min='0' max='100' value="50">
+                        <output name="result" for="myRange">0</output>
+                    </section>
+                </div>
+                <hr class="form__line">
+                <div class="form__block">
+                    <section class="form__section">
+                        <input class="form__input" type="file" name="file" id="input-file" class="input-file"><br>
+                        <label class="form__label" for="input-file">File size of your document should not exceed 10MB</label>
+                    </section>
+                    <section class="form__section">
+                        <span class="form__checkbox"><input type="checkbox" name="protecting"><label for="protecting">I want
+                                to protect my data by signing an NDA</label></span>
+                        <span class="form__checkbox"><input type="checkbox" checked name="accepting"><label for="accepting">I
+                                have read and accept the Terms and Conditions</label></span>
+                    </section>
+                </div>
+                <div class="form__submit submit">
+                    <button class="submit__button" type="submit" value="Submit">Submit</button>
+                    <span class="form__checkbox"><input type="radio" name="agreements" id="agreements">
+                        <label class="form__label" for="agreements"> duciLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Itaque</label></span>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer class="page__footer footer">
+        <div class="footer__block">
+            <h2 class="footer__title">Career</h2>
+            <p>If you are interested in working at Logo<br>send us your CV to <a class="footer__mail" href="mailto:careers@logo.com">careers@logo.com</a><br>and we can talk</p>
+            <div>
+                <button class="footer__button"><img src="assets/instagram.png" alt="Instagram"></button>
+                <button class="footer__button"><img src="assets/Vector.png" alt="Facebook"></button>
+                <button class="footer__button"><img src="assets/Vector (1).png" alt="Telegram"></button>
+            </div>
+        </div>
+
+        <div class="footer__block">
+            <h2 class="footer__title">Offices</h2>
+            <p>United States of America<br>500 5th Avenue Suite 400,NY 10110</p>
+            <p>United Kingdom<br>High St,Bromley BR1 1DN</p>
+            <p>France<br>80 avenue des Terrioirs de France, Paris</p>    
+        </div>
+
+        <div class="footer__block ">
+            <h2 class="footer__title">For Quick Inquiries</h2>
+            <ul class="footer__phone phone-list">
+                <li><img src="assets/United Kingdom (GB).png" alt="flag-UK"><a class="phone-list__item" href="tel:+447911123456">+44 7911123456</a></li>
+                <li><img src="assets/Group 2.png" alt="flag-USA"><a class="phone-list__item" href="tel:+12124567890">+1-212-456-7890</a></li>
+            </ul>
+                <p><label class="footer__label" for="email">Join our newsletter</label></p>
+            <div>
+                <input class="footer__input" type="email" required id="email" name="email" placeholder="Email">
+                <span class="footer__icon"><img src="assets/Vector (2).png" alt="icon"></span>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+
+</html>
