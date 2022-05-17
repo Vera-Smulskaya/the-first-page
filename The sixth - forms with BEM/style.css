@@ -3,8 +3,34 @@
   src: url("Montserrat-Regular.ttf");
 }
 
-:root {
-  color-scheme: light dark;
+html[data-theme='light'] {
+  --back-color: white; 
+    --text-color: #868688;
+    --submit-solor: #6759ff;
+    --footer-color: #151a30;
+    --footer-text: #dbdee7;
+    --nav-color:white;
+    --main-title: black;
+    --nav-button: white;
+    --input-color: white;
+    --textarea-color: white;
+    --label-color: #5f5f60;
+    --checkbox-text: #5f5f60;
+}
+
+html[data-theme='dark'] {
+  --back-color: #111217; 
+    --text-color: white;
+    --submit-color: linear-gradient(136.51deg, #7B20B5 0%, #EA51BC 94.14%);;
+    --footer-color: #151A30;
+    --footer-text: #dbdee7;
+    --nav-color: #151A30;
+    --main-title: white;
+    --nav-button: #151A30;
+    --input-color: #111217;
+    --textarea-color: #111217;
+    --label-color: white;
+    --checkbox-text: white;
 }
 
 .page {
