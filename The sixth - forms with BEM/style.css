@@ -73,21 +73,17 @@ html[data-theme='dark'] {
   padding-right: 4px;
 }
 
-.nav__button {
+.nav__button, .menu__button {
   border: none;
   background-color: var(--nav-button);
   color: #868688;
 }
 
-.nav__button:active {
+.nav__button:active, .menu__button:active {
   background-position: 0% -66px;
   color: #222;
   padding: 5px 0 6px 8px;
 }
-  
-/* .nav__button_light-dark {
-
-} */
 
 .nav__icons {
   display: flex;
