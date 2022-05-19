@@ -96,23 +96,26 @@
   line-height: 1.2;
 }
 
-.buttom-whatsapp {
+.start-section__button-whatsapp {
   background-color: #00856f;
   color: white;
   border-radius: 35px;
   border: 1px solid #00856f;
   width: 200px;
   height: 35px;
-  display: flex;
-  align-items: center;
   padding: 3px 20px;
 }
 
-.buttom-whatsapp:active {
+.button-whatsapp {
+  display: flex;
+  align-items: center;
+}
+
+.button-whatsapp:active {
   background-color: #023930;
 }
 
-.buttom-whatsapp__icon {
+.button-whatsapp__icon {
   margin-right: 10px;
 }
 
@@ -151,14 +154,14 @@
   color: #00856f;
 }
 
-.page__section-service {
+.page__service {
   height: 700px;
   padding-top: 200px;
   padding: 200px 123px 150px;
   background-color: #f7f9f9;
 }
 
-.section-service__text {
+.service__text {
   font-size: 14px;
   font-weight: 700;
   color: #00856f;
@@ -166,13 +169,13 @@
   text-transform: uppercase;
 }
 
-.section-service__title {
+.service__title {
   text-align: center;
   font-size: 40px;
   line-height: 1.5;
 }
 
-.section-service__container {
+.service__container {
   display: flex;
   flex-wrap: wrap;
   background: #f7f9f9;
@@ -181,13 +184,13 @@
   margin: 0 auto;
 }
 
-.section-service__block:hover {
-    position: relative;
-    opacity: 1;
-    transform: scale(1.3);
-} 
+.service__block:hover {
+  position: relative;
+  opacity: 1;
+  transform: scale(1.3);
+}
 
-.section-service__block {
+.service__block {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -198,13 +201,7 @@
   border: 1px solid #dce9e2;
 }
 
-.section-servise__icon {
-}
-
-.section-service__subtitle {
-}
-
-.section-service__desc {
+.service__desc {
   line-height: 2;
 }
 
@@ -242,9 +239,6 @@
   justify-content: space-between;
 }
 
-.section-contact-us {
-}
-
 .section-contact-us__title {
   font-size: 40px;
   line-height: 1.5;
@@ -263,6 +257,16 @@
 .section-contact-us__email {
   text-decoration: none;
   color: black;
+}
+
+.section-contact-us__button-whatsapp {
+  background-color: #00856f;
+  color: white;
+  border-radius: 35px;
+  border: 1px solid #00856f;
+  width: 200px;
+  height: 35px;
+  padding: 3px 20px;
 }
 
 .page__footer {
