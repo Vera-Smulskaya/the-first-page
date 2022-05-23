@@ -11,13 +11,14 @@
 </head>
 
 <body class="page">
-    <header class="page__header header header_fixed">
+    <div class="page__container">
+    <header class="page__header header header_sticky">
         <div class="header__logo">
             <a class="header__logo-link" href="index.html">Doctor<span
                     class="header__logo-link header__logo-link_green">Care</span></a>
         </div>
         <ul class="header__nav-menu nav-menu">
-            <li class="nav-menu__item"><button class="nav-menu__button">Inicio</button></li>
+            <li class="nav-menu__item nav-menu__item_underlined"><button class="nav-menu__button">Inicio</button></li>
             <li class="nav-menu__item"><button class="nav-menu__button">Sobre</button></li>
             <li class="nav-menu__item"><button class="nav-menu__button">Serviços</button></li>
             <li class="nav-menu__item"><button class="nav-menu__button">Depoimentos</button></li>
@@ -29,15 +30,15 @@
         <div class="start-section__block">
             <p class="start-section__name">BOAS-VINDAS A DOCTORCARE</p>
             <h1 class="start-section__title">Assistencia medica<br>simlificada para todos</h1>
-            <p class="start-section__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum dolores
-                doloremque pariatur<br> perspiciatis fugit ipsa iste, debitis animi id!</p>
+            <p class="start-section__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum dolores<br>
+                doloremque pariatur perspiciatis fugit ipsa iste, debitis animi id!</p>
             <buttom class="start-section__button-whatsapp button-whatsapp">
                 <img class="button-whatsapp__icon" src="assets/whatsapp.svg" alt="whatsapp">
                 <div>Agenta sua consulta</div>
             </buttom>
         </div>
-        <div class="start-section__img">
-            <img src="img/woman.png" alt="woman">
+        <div>
+            <img class="start-section__img" src="img/woman.png" alt="woman">
         </div>
     </section>
     <section class="page__section-amount section-amount">
@@ -150,7 +151,7 @@
             </a>
         </div>
     </footer>
-
+    </div>    
 </body>
 
 </html>
