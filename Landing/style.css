@@ -3,6 +3,10 @@
   src: url("https://fonts.google.com/share?selection.family=DM%20Sans%7CLato%7COswald:wght@600");
 }
 
+ html {
+   background-color: whitesmoke;
+ }
+
 .page {
   font-family: "DM Sans", sans-serif;
   box-sizing: border-box;
@@ -26,14 +30,53 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   border-bottom: 1px solid #00856f;
   box-sizing: border-box;
 }
 
+.header__hero {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, .2);
+}
+
+.header__dark-green-bg {
+
+  background-color: #00856f;
+  position: fixed; 
+  width: 100%;
+  top: 0;
+} 
+
+/* header {
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.hero {
+  background: teal;
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, .2);
+  font-size: 3rem;
+  text-align: center;
+}
+.header-bg {
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+} */
+
 .header__logo {
   color: #00856f;
   text-decoration: none;
+  cursor:pointer;
 }
 
 .header__logo-link {
@@ -68,6 +111,7 @@
   color: #00856f;
   border: none;
   align-items: center;
+  cursor:pointer;
 }
 
 .nav-menu__button:active {
@@ -84,6 +128,7 @@
   border: 1px solid #00856f;
   width: 200px;
   height: 35px;
+  cursor:pointer;
 }
 
 .header__button:active {
@@ -93,23 +138,28 @@
 
 .page__start-section {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: #dce9e2;
-  padding: 30px 123px 60px 123px;
+  padding: 13px 123px 60px 123px;
   width: 100%;
   box-sizing: border-box;
   position:relative;
 }
 
 .start-section__desc {
-  line-height: 2;
+  line-height: 1.5;
+  font-style: normal;
+font-weight: 400;
+font-size: 18px;
+margin-bottom: 32px;
+
 }
 
 .start-section__name {
   font-weight: 700;
   font-size: 14px;
   color: #00856f;
+  margin-top: 80px;
+  margin: 80px 0 0 0;
 }
 
 .start-section__title {
@@ -117,17 +167,20 @@
   font-weight: 700;
   font-size: 52px;
   line-height: 1.3;
-  margin-top: 10px;
+  margin: 16px 63px 24px 0;
 }
 
 .start-section__button-whatsapp {
   background-color: #00856f;
   color: white;
+  font-size: 14px;
+  text-transform: uppercase;
   border-radius: 35px;
   border: 1px solid #00856f;
   width: 200px;
   height: 35px;
   padding: 3px 20px;
+  cursor:pointer;
 }
 
 .button-whatsapp {
@@ -141,6 +194,8 @@
 
 .button-whatsapp__icon {
   margin-right: 10px;
+  width: 16.59px; 
+  height: 16.59px;
 }
 
 .page__section-amount {
@@ -150,7 +205,6 @@
   min-width: 327px;
   width: 80%;
   max-width: 1120px;
-  height: 210px;
   border: 1px solid #dce9e2;
   margin: 0 123px;
   padding: 60px;
@@ -196,12 +250,15 @@
   color: #00856f;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .service__title {
   text-align: center;
   font-size: 40px;
   line-height: 1.5;
+  margin-top: 16px;
+  margin-bottom: 64px;
 }
 
 .service__container {
@@ -216,26 +273,35 @@
 
 .service__block:hover {
   opacity: 1;
-  transform: scale(1.3);
-  transition: 2s;
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .service__block {
   width: 347px;
   height: 207px;
-  gap: 40px;
-  align-content: center;
   background-color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding: 24px;
   border: 1px solid #dce9e2;
   box-sizing: border-box;
 }
 
 .service__desc {
-  line-height: 2;
+  line-height: 1.5;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
 }
 
+.servise__icon {
+  background-color:  #DCE9E2;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+}
+  
 .page__section-doc-quality {
   display: flex;
   align-items: center;
@@ -247,7 +313,7 @@
 }
 
 .section-doc-quality__text {
-  margin-left: 40px;
+  margin-left: 67px;
 }
 
 .section-doc-quality__name {
@@ -260,10 +326,15 @@
 .section-doc-quality__title {
   font-size: 40px;
   line-height: 1.5;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  margin: 10px 0 24px 0;
+
 }
 
 .section-doc-quality__desc {
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .page__section-contact-us {
@@ -280,10 +351,11 @@
 .section-contact-us__title {
   font-size: 40px;
   line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 .section-contact-us__item {
-  padding-bottom: 40px;
+  padding-bottom: 16px;
   display: flex;
   align-items: center;
 }
@@ -305,6 +377,10 @@
   width: 200px;
   height: 35px;
   padding: 3px 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor:pointer;
 }
 
 .page__footer {
@@ -338,4 +414,27 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor:pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .start-section__title {
+  font-size: 34px;
+  }
+
+  
+
+  .service__title, .section-doc-quality__title, .section-contact-us__title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .start-section__title {
+    font-size: 34px;
+    }
+
+    .service__title, .section-doc-quality__title, .section-contact-us__title {
+      font-size: 30px;
+    }
 }
