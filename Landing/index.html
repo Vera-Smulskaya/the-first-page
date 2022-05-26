@@ -1,157 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <title>Landing</title>
 
-    <link rel="stylesheet" href="style.css" type="text/css">
 
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 
 <body class="page">
     <div class="page__container">
-    <header class="page__header  header">
+        <header class="page__header header">
             <div class="header__logo">
-                <a class="header__logo-link" href="index.html">Doctor<span
-                        class="header__logo-link header__logo-link_green">Care</span></a>
+                <a class="header__logo-link" href="/">
+                    Doctor
+                    <b>Care</b>
+                </a>
             </div>
             <ul class="header__nav-menu nav-menu">
-                <li class="nav-menu__item nav-menu__item_underlined"><button class="nav-menu__button">Inicio</button></li>
-                <li class="nav-menu__item"><button class="nav-menu__button">Sobre</button></li>
-                <li class="nav-menu__item"><button class="nav-menu__button">Serviços</button></li>
-                <li class="nav-menu__item"><button class="nav-menu__button">Depoimentos</button></li>
+                <li class="nav-menu__item nav-menu__item_underlined">
+                    <a href="#inicio" class="nav-menu__link">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#sobre" class="nav-menu__link">
+                        Sobre
+                    </a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#servicos" class="nav-menu__link">
+                        Serviços
+                    </a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#depoimentos" class="nav-menu__link">
+                        Depoimentos
+                    </a>
+                </li>
             </ul>
-            <button class="header__button">AGENDAR CONSULTA</button>
-    </header>
+            <button class="header__button">Agendar consulta</button>
+            <div class="header__mobile-menu">
+                <span class="header__mobile-menu__item"></span>
+            </div>
+        </header>
 
-    <section class="page__start-section start-section">
-        <div class="start-section__block">
-            <p class="start-section__name">BOAS-VINDAS A DOCTORCARE</p>
-            <h1 class="start-section__title">Assistencia medica<br>simlificada para todos</h1>
-            <p class="start-section__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum dolores<br>
-                doloremque pariatur perspiciatis fugit ipsa iste, debitis animi id!</p>
-            <buttom class="start-section__button-whatsapp button-whatsapp">
-                <img class="button-whatsapp__icon" src="assets/whatsapp.svg" alt="whatsapp">
-                <div>Agenta sua consulta</div>
-            </buttom>
-        </div>
-        <div>
-            <img class="start-section__img" src="img/woman.png" alt="woman">
-        </div>
-    </section>
-    <section class="page__section-amount section-amount">
-        <div class="section-amount__block">
-            <p class="section-amount__sum">+3.500</p>
-            <p class="section-amount__text">Pacientes atendidos</p>
-        </div>
-        <div class="section-amount__block section-amount__block_central">
-            <p class="section-amount__sum">+15</p>
-            <p class="section-amount__text">Especialistas disponíveis</p>
-        </div>
-        <div class="section-amount__block">
-            <p class="section-amount__sum">+10</p>
-            <p class="section-amount__text">Anos no mercado</p>
-        </div>
-    </section>
-    <section class="page__service service">
-        <p class="service__text">Services</P>
-        <h2 class="service__title">Como podemos ajudá-lo<br> a se sentir melhor?</h2>
-        <div class="service__container">
-            <div class="service__block">
-                <div class="servise__icon"><img src="assets/check.png" alt="icon"></div>
-                <h3 class="service__subtitle">Problemas digestivos</h3>
-                <p class="service__desc">Amet minim mollit non deserunt<br> ullamco est sit aliqua dolor do amet
-                    sint.<br> Velit officia consequat duis enim.</p>
+
+        <section class="page__start start">
+            <a name="inicio"></a>
+            <div class="start__block">
+                <p class="start__name">Boas-vindas a doctorcare</p>
+                <h1 class="start__title">
+                    Assistencia medica
+                    <br>
+                    simlificada para todos
+                </h1>
+                <p class="start__desc">
+                    Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar
+                    uma cura a longo prazo.
+                </p>
+                <button class="start__button-whatsapp button-whatsapp">
+                    <img class="button-whatsapp__icon" src="assets/whatsapp.svg" alt="whatsapp">
+                    <div>Agenta sua consulta</div>
+                </button>
             </div>
-            <div class="service__block">
-                <div class="servise__icon"><img src="assets/check.png" alt="icon"></div>
-                <h3 class="service__subtitle">Saúde Hormonal</h3>
-                <p class="service__desc">Amet minim mollit non deserunt <br> ullamco est sit aliqua dolor do
-                    amet sint.<br> Velit officia consequat duis enim.</p>
+            <div>
+                <img class="start__img" src="img/woman.png" alt="woman">
             </div>
-            <div class="service__block">
-                <div class="servise__icon"><img src="assets/check.png" alt="icon"></div>
-                <h3 class="service__subtitle">Bem-estar mental</h3>
-                <p class="service__desc">Amet minim mollit non deserunt <br> ullamco est sit aliqua dolor do
-                    amet sint.<br> Velit officia consequat duis enim.</p>
+        </section>
+        <section class="page__amount amount">
+            <div class="amount__block">
+                <p class="amount__sum">+3.500</p>
+                <p class="amount__text">Pacientes atendidos</p>
             </div>
-            <div class="service__block">
-                <div class="servise__icon"><img src="assets/check.png" alt="icon"></div>
-                <h3 class="service__subtitle">Cuidados Pediátricos</h3>
-                <p class="service__desc">Amet minim mollit non deserunt <br> ullamco est sit aliqua dolor do
-                    amet sint.<br> Velit officia consequat duis enim.</p>
+            <div class="amount__block amount__block_central">
+                <p class="amount__sum">+15</p>
+                <p class="amount__text">Especialistas disponíveis</p>
             </div>
-            <div class="service__block">
-                <div class="servise__icon"><img src="assets/check.png" alt="icon"></div>
-                <h3 class="service__subtitle">Autoimune e Inflamação</h3>
-                <p class="service__desc">Amet minim mollit non deserunt <br> ullamco est sit aliqua dolor do
-                    amet sint.<br> Velit officia consequat duis enim.</p>
+            <div class="amount__block">
+                <p class="amount__sum">+10</p>
+                <p class="amount__text">Anos no mercado</p>
             </div>
-            <div class="service__block">
-                <div class="servise__icon"><img src="assets/check.png" alt="icon"></div>
-                <h3 class="service__subtitle">Saúde do Coração</h3>
-                <p class="service__desc">Amet minim mollit non deserunt <br> ullamco est sit aliqua dolor do
-                    amet sint.<br> Velit officia consequat duis enim.</p>
+        </section>
+        <a name="servicos"></a>
+        <section class="page__service service">
+            <p class="service__text">Services</p>
+            <h2 class="service__title">
+                Como podemos ajudá-lo
+                a se sentir melhor?
+            </h2>
+            <div class="service__container">
+                <a href="/" class="service__link">
+                    <div class="service__block">
+                        <div class="servise__icon">
+                            <img src="assets/check.png" alt="icon">
+                        </div>
+                        <h3 class="service__subtitle">Problemas digestivos</h3>
+                        <p class="service__desc">
+                            Amet minim mollit non deserunt
+                            <br>
+                            ullamco est sit aliqua dolor do amet sint.
+                            <br>
+                            Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                </a>
+                <a href="/" class="service__link">
+                    <div class="service__block">
+                        <div class="servise__icon">
+                            <img src="assets/check.png" alt="icon">
+                        </div>
+                        <h3 class="service__subtitle">Saúde Hormonal</h3>
+                        <p class="service__desc">
+                            Amet minim mollit non deserunt
+                            <br>
+                            ullamco est sit aliqua dolor do amet sint.
+                            <br>
+                            Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                </a>
+                <a href="/" class="service__link">
+                    <div class="service__block">
+                        <div class="servise__icon">
+                            <img src="assets/check.png" alt="icon">
+                        </div>
+                        <h3 class="service__subtitle">Bem-estar mental</h3>
+                        <p class="service__desc">
+                            Amet minim mollit non deserunt
+                            <br>
+                            ullamco est sit aliqua dolor do amet sint.
+                            <br>
+                            Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                </a>
+                <a href="/" class="service__link">
+                    <div class="service__block">
+                        <div class="servise__icon">
+                            <img src="assets/check.png" alt="icon">
+                        </div>
+                        <h3 class="service__subtitle">Cuidados Pediátricos</h3>
+                        <p class="service__desc">
+                            Amet minim mollit non deserunt
+                            <br>
+                            ullamco est sit aliqua dolor do amet sint.
+                            <br>
+                            Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                </a>
+                <a href="/" class="service__link">
+                    <div class="service__block">
+                        <div class="servise__icon">
+                            <img src="assets/check.png" alt="icon">
+                        </div>
+                        <h3 class="service__subtitle">Autoimune e Inflamação</h3>
+                        <p class="service__desc">
+                            Amet minim mollit non deserunt
+                            <br>
+                            ullamco est sit aliqua dolor do amet sint.
+                            <br>
+                            Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                </a>
+                <a href="/" class="service__link">
+                    <div class="service__block">
+                        <div class="servise__icon">
+                            <img src="assets/check.png" alt="icon">
+                        </div>
+                        <h3 class="service__subtitle">Saúde do Coração</h3>
+                        <p class="service__desc">
+                            Amet minim mollit non deserunt
+                            <br>
+                            ullamco est sit aliqua dolor do amet sint.
+                            <br>
+                            Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                </a>
             </div>
-        </div>
-    </section>
-    <section class="page__section-doc-quality section-doc-quality">
-        <div class="section-doc-quality__img">
-            <img src="img/doctor-with-patients.png" alt="doctor-with-patiens">
-        </div>
-        <div class="section-doc-quality__text">
-            <p class="section-doc-quality__name">SOBRE NÓS</p>
-            <h2 class="section-doc-quality__title">Entenda quem somos<br> e por que existimos</h2>
-            <p class="section-doc-quality__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua
-                dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit
-                aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est
-                sit aliqua dolor do amet sint.</p>
-        </div>
-    </section>
-    <section class="page__section-contact-us section-contact-us">
-        <div>
-            <h2 class="section-contact-us__title">Entre em contato<br> com a gente!</h2>
-            <div class="section-contact-us__item">
-                <img class="section-contact-us__icon" src="assets/map.png" alt="icon">R. Amauri Souza, 346
+        </section>
+        <a name="sobre"></a>
+        <section class="page__doc-quality doc-quality">
+            <div>
+                <img class="doc-quality__img" src="img/doctor-with-patients.png" alt="doctor-with-patiens">
             </div>
-            <div class="section-contact-us__item">
-                <img class="section-contact-us__icon" src="assets/mail.png" alt="icon">
-                <a class="section-contact-us__email" href="mailto:contato@doctorcare.com">contato@doctorcare.com</a>
+            <div class="doc-quality__text">
+                <p class="doc-quality__name">Sobre nos</p>
+                <h2 class="doc-quality__title">
+                    Entenda quem somos
+                    <br>
+                    e por que existimos
+                </h2>
+                <p class="doc-quality__desc">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim. Amet minim mollit non
+                    deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                    consequat duis enim. Amet minim mollit non deserunt ullamco est sit
+                    aliqua dolor do amet sint. Velit officia consequat duis enim. Amet
+                    minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia consequat duis enim. Amet minim mollit non deserunt
+                    ullamco est sit aliqua dolor do amet sint.
+                </p>
             </div>
-            <buttom class="section-contact-us__button-whatsapp button-whatsapp">
-                <img class="button-whatsapp__icon" src="assets/whatsapp.svg" alt="whatsapp">
-                <div>Agenta sua consulta</div>
-            </buttom>
-        </div>
-        <div>
-            <img src="img/man.png" alt="happy man">
-        </div>
-    </section>
-    <footer class="page__footer footer">
-        <div class="footer__block">
-            <p>
-                <a class="footer__logo" href="/">Doctor<b>Care</b></a>
-            </p>
-            <p class="footer__text">©2022 - DoctorCare.</p>
-            <p class="footer__text">Todos os direitos reservados.</p>
-        </div>
-        <div class="footer__social-network social-network">
-            <a href="/">
-                <img src="assets/instagram.png" alt="instagram">
-            </a>
-            <a href="/">
-                <img src="assets/facebook.png" alt="facebook">
-            </a>
-            <a href="/">
-                <img src="assets/youtube.png" alt="youtube">
-            </a>
-        </div>
-    </footer>
-    </div>    
+        </section>
+        <a name="depoimentos"></a>
+        <section class="page__contact-us contact-us">
+            <div>
+                <h2 class="contact-us__title">
+                    Entre em contato
+                    <br>
+                    com a gente!
+                </h2>
+                <div class="contact-us__item">
+                    <a class="contact-us__map" href="R.Amauri Souza, 346">
+                        <img class="contact-us__icon" src="assets/map.png" alt="map">
+                        R.Amauri Souza, 346
+                    </a>
+                </div>
+                <div class="contact-us__item">
+                    <a class="contact-us__email" href="mailto:contato@doctorcare.com">
+                        <img class="contact-us__icon" src="assets/mail.png" alt="mail">
+                        contato@doctorcare.com
+                    </a>
+                </div>
+                <button class="contact-us__button-whatsapp button-whatsapp">
+                    <img class="button-whatsapp__icon" src="assets/whatsapp.svg" alt="whatsapp">
+                    <div>Agenta sua consulta</div>
+                </button>
+            </div>
+            <div>
+                <img class="contact-us__img" src="img/man.png" alt="happy-man">
+            </div>
+        </section>
+        <footer>
+            <div class="page__footer footer">
+                <div class="footer__block">
+                    <p>
+                        <a class="footer__logo" href="/">
+                            Doctor
+                            <b>Care</b>
+                        </a>
+                    </p>
+                    <p class="footer__text">©2022 - DoctorCare.</p>
+                    <p class="footer__text">Todos os direitos reservados.</p>
+                </div>
+                <div class="footer__social-network social-network">
+                    <a href="/" class="social-network__item">
+                        <img class="social-network-focus" src="assets/instagram.png" alt="instagram">
+                    </a>
+                    <a href="/" class="social-network__item">
+                        <img src="assets/facebook.png" alt="facebook">
+                    </a>
+                    <a href="/" class="social-network__item">
+                        <img src="assets/youtube.png" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 
 </html>
